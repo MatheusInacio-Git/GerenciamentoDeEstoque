@@ -1,0 +1,75 @@
+.titulo{
+    text-shadow: 
+    -1px -1px 0 #ffffff71,  /* Sombra branca para o topo esquerdo */
+    -1px -1px 0 #ffffff71,   /* Sombra branca para o topo direito */
+    -1px -1px 0 #ffffff71,   /* Sombra branca para o fundo esquerdo */
+    -1px -1px 0 #ffffff71;    /* Sombra branca para o fundo direito */
+}
+
+body {
+    background-color:#afafaf; /* Fundo da página mais escuro */
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Deixar o texto mais visível */
+}
+
+/* Estilos gerais */
+.cartao-produto {
+    padding: 1px; 
+}
+
+.cartao-produto .card {
+    border: 2px solid #7a7a7a; /* Borda azul Bootstrap */
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.507); /* Sombra sutil */
+    background-color: rgb(236, 236, 236);
+}
+
+
+/* Botões de controle alinhados */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.d-flex button {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.d-flex button:last-child {
+    margin-right: 0;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-img-top {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .btn-group button, .d-flex button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .status .badge {
+        font-size: 1.2rem;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .mt-5 {
+        margin-top: 20px;
+    }
+}
